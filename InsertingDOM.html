@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="my-id">
+        <h1 id="my-id-1">This is my first content</h1>
+        <h1 id="my-id-2">This is my Third content</h1>
+    </div>
+
+    <script>
+        var newElement=document.createElement('h2')
+        newElement.textContent="This is my second content which is newly inserted newly"
+        var appendElement=document.getElementById('my-id')
+        appendElement.appendChild(newElement)
+        var element=document.getElementById('my-id')
+        var nextnode=document.getElementById('my-id-2')
+        nextnode.parentNode.insertBefore(newElement,nextnode)
+    </script>
+</body>
+</html>

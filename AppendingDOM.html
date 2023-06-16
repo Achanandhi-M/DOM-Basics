@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="my-div">
+        <h1 id="my-id1">This is original content</h1>
+    </div>
+    <script>
+        // creating new element
+        var newElement=document.createElement('h2')
+        newElement.textContent="This is New content"
+        var append=document.getElementById('my-div')
+        //appending to the existing content
+        append.appendChild(newElement)
+
+    </script>
+</body>
+</html>
